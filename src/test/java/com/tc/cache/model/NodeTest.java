@@ -6,9 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.tc.cache.model.DoublyLinkedList;
-import com.tc.cache.model.DummyNode;
-import com.tc.cache.model.Node;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -81,4 +78,8 @@ class NodeTest {
         assertNull(exception.getMessage());
     }
 
+    @Test
+    void testToString() {
+        assertEquals("Node{value=A}", testNodeA.toString());
+    }
 }
